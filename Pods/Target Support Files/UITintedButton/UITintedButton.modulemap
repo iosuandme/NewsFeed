@@ -1,0 +1,6 @@
+framework module UITintedButton {
+  umbrella header "UITintedButton-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="8B7-V4-Ovh">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="mNX-Pb-BZS">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="8B7-V4-Ovh" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fzr-o6-cut"/>
+                        <viewControllerLayoutGuide type="bottom" id="FLt-sF-ctg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="V3l-zj-YAf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="box" translatesAutoresizingMaskIntoConstraints="NO" id="RgB-6K-Yd4">
+                                <rect key="frame" x="30" y="153" width="260" height="174"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="RgB-6K-Yd4" secondAttribute="height" multiplier="1080:724" id="PMN-7P-2cz"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.30588235289999999" green="0.34509803919999998" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="RgB-6K-Yd4" firstAttribute="centerX" secondItem="V3l-zj-YAf" secondAttribute="centerX" id="4Me-uB-245"/>
+                            <constraint firstItem="RgB-6K-Yd4" firstAttribute="leading" secondItem="V3l-zj-YAf" secondAttribute="leading" constant="30" id="I5l-0B-GX5"/>
+                            <constraint firstItem="RgB-6K-Yd4" firstAttribute="width" secondItem="RgB-6K-Yd4" secondAttribute="height" multiplier="1080:724" id="b4j-x0-nIk"/>
+                            <constraint firstItem="RgB-6K-Yd4" firstAttribute="centerY" secondItem="V3l-zj-YAf" secondAttribute="centerY" id="k0a-9x-tvn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="nIr-8t-aMN"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fst-YF-WVS" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-245" y="301"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="box" width="360" height="241"/>
+    </resources>
+</document>

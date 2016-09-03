@@ -1,0 +1,6 @@
+framework module SMScrollView {
+  umbrella header "SMScrollView-umbrella.h"
+
+  export *
+  module * { export * }
+}

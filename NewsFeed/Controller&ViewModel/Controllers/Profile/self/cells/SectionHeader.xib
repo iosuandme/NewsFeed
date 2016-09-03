@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="0LM-qI-Ivb" customClass="SectionHeader" customModule="NewsFeed" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tju-YL-4p5">
+                    <rect key="frame" x="0.0" y="1" width="222" height="48"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 PHOTOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZG-ax-VKK">
+                            <rect key="frame" x="10" y="16" width="69" height="17"/>
+                            <color key="backgroundColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="kZG-ax-VKK" firstAttribute="leading" secondItem="tju-YL-4p5" secondAttribute="leading" constant="10" id="dX6-jL-9fu"/>
+                        <constraint firstItem="kZG-ax-VKK" firstAttribute="centerY" secondItem="tju-YL-4p5" secondAttribute="centerY" id="hgN-O0-63k"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Moy-SH-7hJ">
+                    <rect key="frame" x="272" y="1" width="48" height="48"/>
+                    <color key="backgroundColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Moy-SH-7hJ" secondAttribute="height" id="SlQ-Y8-P7H"/>
+                    </constraints>
+                    <state key="normal" image="menu"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxb-Pe-8vx">
+                    <rect key="frame" x="223" y="1" width="48" height="48"/>
+                    <color key="backgroundColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="qxb-Pe-8vx" secondAttribute="height" id="eII-2Q-ecO"/>
+                    </constraints>
+                    <state key="normal" image="grid"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="tju-YL-4p5" firstAttribute="leading" secondItem="0LM-qI-Ivb" secondAttribute="leading" id="3p1-GG-zam"/>
+                <constraint firstItem="tju-YL-4p5" firstAttribute="centerX" secondItem="0LM-qI-Ivb" secondAttribute="centerX" id="4aU-bs-slb"/>
+                <constraint firstItem="Moy-SH-7hJ" firstAttribute="top" secondItem="0LM-qI-Ivb" secondAttribute="topMargin" constant="1" id="5KS-ZW-fkD"/>
+                <constraint firstItem="tju-YL-4p5" firstAttribute="centerY" secondItem="0LM-qI-Ivb" secondAttribute="centerY" id="7LX-I7-fmj"/>
+                <constraint firstItem="qxb-Pe-8vx" firstAttribute="width" secondItem="qxb-Pe-8vx" secondAttribute="height" id="98X-8c-ZXa"/>
+                <constraint firstItem="Moy-SH-7hJ" firstAttribute="leading" secondItem="qxb-Pe-8vx" secondAttribute="trailing" constant="1" id="BJs-Dt-KLh"/>
+                <constraint firstAttribute="trailing" secondItem="tju-YL-4p5" secondAttribute="trailing" id="ItU-cL-W7L"/>
+                <constraint firstItem="Moy-SH-7hJ" firstAttribute="top" secondItem="0LM-qI-Ivb" secondAttribute="top" constant="1" id="P9F-bQ-UW6"/>
+                <constraint firstItem="tju-YL-4p5" firstAttribute="top" secondItem="0LM-qI-Ivb" secondAttribute="top" constant="1" id="T56-hm-dI0"/>
+                <constraint firstItem="qxb-Pe-8vx" firstAttribute="height" secondItem="tju-YL-4p5" secondAttribute="height" id="Ufv-Gm-fp2"/>
+                <constraint firstItem="Moy-SH-7hJ" firstAttribute="trailing" secondItem="0LM-qI-Ivb" secondAttribute="trailingMargin" id="Ybb-8c-91h"/>
+                <constraint firstItem="qxb-Pe-8vx" firstAttribute="centerY" secondItem="tju-YL-4p5" secondAttribute="centerY" id="dIi-Pj-FYE"/>
+                <constraint firstItem="qxb-Pe-8vx" firstAttribute="leading" secondItem="tju-YL-4p5" secondAttribute="trailing" constant="1" id="dJp-th-OkT"/>
+                <constraint firstItem="Moy-SH-7hJ" firstAttribute="centerY" secondItem="tju-YL-4p5" secondAttribute="centerY" id="dkb-Pq-Grp"/>
+                <constraint firstAttribute="trailing" secondItem="Moy-SH-7hJ" secondAttribute="trailing" id="o9X-7z-sDV"/>
+                <constraint firstItem="Moy-SH-7hJ" firstAttribute="height" secondItem="tju-YL-4p5" secondAttribute="height" id="opS-0K-caI"/>
+                <constraint firstItem="Moy-SH-7hJ" firstAttribute="centerY" secondItem="0LM-qI-Ivb" secondAttribute="centerY" id="q5f-yN-n5X"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="4aU-bs-slb"/>
+                    <exclude reference="7LX-I7-fmj"/>
+                    <exclude reference="ItU-cL-W7L"/>
+                    <exclude reference="T56-hm-dI0"/>
+                    <exclude reference="98X-8c-ZXa"/>
+                    <exclude reference="5KS-ZW-fkD"/>
+                    <exclude reference="Ybb-8c-91h"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="countNewsLabel" destination="kZG-ax-VKK" id="tOf-ou-6yk"/>
+                <outlet property="gridStyleButton" destination="qxb-Pe-8vx" id="lpi-j3-brO"/>
+                <outlet property="listStyleButton" destination="Moy-SH-7hJ" id="IXj-Ai-4i7"/>
+            </connections>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="grid" width="16" height="16"/>
+        <image name="menu" width="16" height="16"/>
+    </resources>
+</document>
